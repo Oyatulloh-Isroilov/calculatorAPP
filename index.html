@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-oy 5-dars Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<!--  -->
+<!-- Java script va HTML -->
+<!--  -->
+
+<body>
+    <div class="container">
+        <div class="calculator-container">
+            <div class="every-cal">
+                <div class="result-place">
+                    <input type="text" name="resultInp" id="resultInp" placeholder="0" disabled>
+                </div>
+                <div class="characters-place">
+                    <div class="wrap">
+                        <div class="wrap-1">
+                            <input class="char" type="button" value="7" onclick="resultInp.value += '7'">
+                            <input class="char" type="button" value="8" onclick="resultInp.value += '8'">
+                            <input class="char" type="button" value="9" onclick="resultInp.value += '9'">
+                            <input class="char" type="button" value="+" onclick="resultInp.value += '+'">
+                        </div>
+                        <div class="wrap-2">
+                            <input class="char" type="button" value="4" onclick="resultInp.value += '4'">
+                            <input class="char" type="button" value="5" onclick="resultInp.value += '5'">
+                            <input class="char" type="button" value="6" onclick="resultInp.value += '6'">
+                            <input class="char" type="button" value="-" onclick="resultInp.value += '-'">
+                        </div>
+                        <div class="wrap-3">
+                            <input class="char" type="button" value="1" onclick="resultInp.value += '1'">
+                            <input class="char" type="button" value="2" onclick="resultInp.value += '2'">
+                            <input class="char" type="button" value="3" onclick="resultInp.value += '3'">
+                            <input class="char" type="button" value="*" onclick="resultInp.value += '*'">
+                        </div>
+                        <div class="wrap-4">
+                            <input class="char" type="button" value="0" onclick="resultInp.value += '0'">
+                            <input class="char" type="button" value="/" onclick="resultInp.value += '/'">
+                            <input class="char" type="button" value="%" onclick="resultInp.value += '%'">
+                            <input class="del" type="button" value="DEL"
+                                onclick="resultInp.value = resultInp.value.toString().slice (0,-1)">
+                        </div>
+                        <div class="wrap-5">
+                            <input class="c" type="button" value="RESET" onclick="resultInp.value = ''">
+                            <input class="resultBtn" type="button" value="="
+                                onclick="resultInp.value = eval(resultInp.value)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
